@@ -50,9 +50,10 @@ h1.example-app-name {
 }
 .mat-sidenav{
   background-color: #231e1e;
+  background-image:url('https://static.iris.net.co/dinero/upload/images/2019/8/22/275964_1.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  height: 100vh;
+
 }
 .example-toolbar{
   height: 100px;

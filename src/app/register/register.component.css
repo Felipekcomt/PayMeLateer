@@ -11,12 +11,12 @@
 .main-div{
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   text-align: left;
+  margin-left: 20%;
 }
 .mat-card{
-  height: auto;
+  height: 300px;
   width: 300px;
   background: whitesmoke;
   text-align:center;

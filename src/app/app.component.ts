@@ -24,10 +24,10 @@ export class AppComponent implements OnInit{
   refresh = null;
 
   fillerNav = [
-    {name: 'Inicio' , route: 'cards', icon: 'home' },
-    {name: 'Clientes' , route: 'customer', icon: 'group' },
-    {name: 'Agregar Clientes', route: 'addcustomer', icon: 'add_circle_outline'},
-    {name: 'Condiciones', route: 'terminos', icon: 'contact_support'}
+    {name: 'Inicio' , route: 'cards', icon: 'account_balance' },
+    {name: 'Clientes' , route: 'customer', icon: 'account_circle' },
+    {name: 'Agregar Clientes', route: 'addcustomer', icon: 'person_add'},
+    {name: 'Marco Legal', route: 'terminos', icon: 'menu_book'}
   ];
 
   fillerContent = Array.from({length: 50}, () =>

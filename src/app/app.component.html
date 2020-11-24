@@ -19,16 +19,13 @@
       <mat-sidenav mode="side" opened *ngIf="visible=== true"
                    [fixedInViewport]="mobileQuery.matches" style="background-color: #231e1e">
         <mat-nav-list>
-          <a style="align-items: center" mat-list-item [routerLink]="nav.route" *ngFor="let nav of fillerNav"><mat-icon>{{nav.icon}}</mat-icon>{{nav.name}}</a>
+          <a style="align-items: center; color: black; font-size: 20px" mat-list-item [routerLink]="nav.route" *ngFor="let nav of fillerNav">
+            <mat-icon style="color: #787878; font-size: 20px">{{nav.icon}}</mat-icon>
+            {{nav.name}}</a>
         </mat-nav-list>
       </mat-sidenav>
-
       <mat-sidenav-content class="mat-sidenav">
-        <div Style="background-image:url('https://static.iris.net.co/dinero/upload/images/2019/8/22/275964_1.jpg'); background-repeat: no-repeat; background-size: cover;">
-        <div>
           <router-outlet></router-outlet>
-        </div>
-         </div>
       </mat-sidenav-content>
     </mat-sidenav-container>
   </div>

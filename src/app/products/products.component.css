@@ -8,7 +8,7 @@ table {
 }
 .main{
   text-align: center;
-  margin: 5%;
+  margin: 2%;
 }
 .main-card{
   height: auto;
@@ -19,12 +19,12 @@ table {
 .cards{
   margin: 2%;
   display: inline-block;
-  width: auto;
+  width: 170px;
   height: auto;
 }
 .scrollable-content {
   overflow: hidden;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
 }
 
