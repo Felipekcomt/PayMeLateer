@@ -1,0 +1,63 @@
+<div>
+<mat-grid-list cols="3" >
+  <mat-grid-tile [colspan]="1">
+<label>
+  <div id="player" class="player" [class.voted]="flipped1" (click)="flipIt1()">
+    <div class="front">
+      <img [src]="imgSrc">
+    </div>
+    <div class="back">
+      <h2 style="margin-top: 35%; font-size: 14px">Con Banknow podras monitorear el flujo de tu caja para asi poder tener una mejor visión de lo que esta pasando en tu negocio</h2>
+    </div>
+  </div>
+</label>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1">
+    <label>
+      <div id="player" class="player" [class.voted]="flipped2" (click)="flipIt2()">
+        <div class="front">
+          <img [src]="imgSrc2">
+        </div>
+        <div class="back">
+          <h2 style="margin-top: 35%; font-size: 14px">Podrás otorgar creditos a tus clientes para que puedan comprar en tu tienda en cualquier momento</h2>
+        </div>
+      </div>
+    </label>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1">
+    <label>
+      <div id="player" class="player" [class.voted]="flipped3" (click)="flipIt3()">
+        <div class="front">
+          <img [src]="imgSrc1">
+        </div>
+        <div class="back"><h2 style="margin-top: 35%; font-size: 14px">Todos los negocios que usan BankNow mejoran como minimo el 20% de sus ventas</h2></div>
+      </div>
+    </label>
+  </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+
+
+
+
+
+
+<!--<div class="div-body-home">
+  <mat-grid-list cols="3" rowHeight="3:1">
+    <mat-card-title-group>
+      <mat-card class="card">
+        <mat-card-title style="text-align: center">Control de caja</mat-card-title>
+        <mat-card-content class="card-content-home">Con Banknow podras monitorear el flujo de tu caja para asi poder tener una mejor visión de lo que esta pasando en tu negocio </mat-card-content>
+      </mat-card>
+      <mat-card class="card">
+        <mat-card-title style="text-align: center">Lineas de creditos para tus clientes</mat-card-title>
+        <mat-card-content class="card-content-home">Podrás otorgar creditos a tus clientes para que puedan comprar en tu tienda en cualquier momento</mat-card-content>
+      </mat-card>
+      <mat-card class="card">
+        <mat-card-title style="text-align: center">Mejora tus ventas</mat-card-title>
+        <mat-card-content class="card-content-home">Todos los negocios que usan BankNow mejoran como minimo el 20% de sus ventas</mat-card-content>
+      </mat-card>
+    </mat-card-title-group>
+  </mat-grid-list>
+</div>-->

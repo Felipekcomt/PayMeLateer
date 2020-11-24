@@ -1,0 +1,43 @@
+<div class="div-main">
+  <div class="example-container" [class.example-is-mobile]="mobileQuery.matches" *ngIf="shouldRun">
+    <mat-toolbar style="background-color: #231e1e"   class="example-toolbar">
+      <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+      <img class = "logo"  src="assets/Frame_3.png" style="width: 300px; height: 80px">
+      <div style="margin-left: 60%">
+        <button class="publicar-button" mat-raised-button color="primary"  style="margin: 5%; background-color: #231e1e" *ngIf="visible === false || visible === null" (click)="login()">Loguearse</button>
+      </div>
+      <div style="margin-left: 3%">
+        <button class="publicar-button" mat-raised-button color="primary"  style="margin: 5%; background-color: #231e1e" *ngIf="visible === false || visible === null" (click)="Register()">Registro</button>
+      </div>
+      <div style="margin-left: 3%">
+      <button class="publicar-button" mat-raised-button color="primary"  style="margin: 5%; background-color: #231e1e" *ngIf="visible === true" (click)="logOut()">Salir</button>
+      </div>
+    </mat-toolbar>
+
+    <mat-sidenav-container class="example-sidenav-container"
+                           [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+      <mat-sidenav mode="side" opened *ngIf="visible=== true"
+                   [fixedInViewport]="mobileQuery.matches" style="background-color: #231e1e">
+        <mat-nav-list>
+          <a style="align-items: center" mat-list-item [routerLink]="nav.route" *ngFor="let nav of fillerNav"><mat-icon>{{nav.icon}}</mat-icon>{{nav.name}}</a>
+        </mat-nav-list>
+      </mat-sidenav>
+
+      <mat-sidenav-content class="mat-sidenav">
+        <div Style="background-image:url('https://static.iris.net.co/dinero/upload/images/2019/8/22/275964_1.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+         </div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+
+  <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>
+  <!--<div class ="div-tollbar">
+  <button class="button-tollbar" mat-raised-button color="primary">Registro</button>
+  <button class="button-tollbar" mat-raised-button color="primary">Iniciar Sesion</button>
+  </div>-->
+
+
+</div>
